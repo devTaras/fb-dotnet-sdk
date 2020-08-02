@@ -21,3 +21,11 @@ ServiceProvider = new ServiceCollection()
             .AddFacebookClient(options => config.GetSection("Facebook").Bind(options))
             .BuildServiceProvider();
 ```
+
+### Capabilities
+The library support operation with application and user tokens (get, convert, debug) and can query basic information about the user.
+You can use _IAccessTokenFbService_ or _IDebugTokenFbService_ for token operations.
+_IUserFbService_ - get information about the user.
+
+_ITestUserFbService_ - service for Test Users
+
