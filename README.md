@@ -3,6 +3,11 @@
 
 Facebook SDK (C# Graph API Client) for Facebook Graph API
 
+Target: _.NET Standard 2.0_
+
+Integration tests target: _.NET Core 3.1_
+
+
 ## How to start using the library?
 You need to add Facebook section to your JSON configuration file with your ClientId and ClientSecret:
 
@@ -25,7 +30,9 @@ ServiceProvider = new ServiceCollection()
 
 ### Capabilities
 The library support operation with application and user tokens (get, convert, debug) and can query basic information about the user.
+
 You can use _IAccessTokenFbService_ or _IDebugTokenFbService_ for token operations.
+
 _IUserFbService_ - get information about the user.
 
 _ITestUserFbService_ - service for Test Users
