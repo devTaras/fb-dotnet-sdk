@@ -26,6 +26,6 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
     - name: Create the package
-      run: dotnet pack --configuration Release facebook-client
+      run: dotnet pack --configuration Release GraphApi.Facebook.Client
     - name: Publish the package to GPR
-      run: dotnet nuget push facebook-client/bin/Release/*.nupkg
+      run: dotnet nuget push GraphApi.Facebook.Client/bin/Release/*.nupkg
