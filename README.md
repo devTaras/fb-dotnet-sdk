@@ -1,5 +1,6 @@
 # Facebook SDK (Graph API C# Client)
 ![.NET Core](https://github.com/devTaras/fb-dotnet-sdk/workflows/.NET%20Core/badge.svg?branch=master)
+
 Facebook SDK (C# Graph API Client) for Facebook Graph API
 
 ## How to start using the library?
