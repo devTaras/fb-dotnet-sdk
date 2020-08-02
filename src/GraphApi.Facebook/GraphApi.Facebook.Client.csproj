@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Taras Seredokha</Authors>
+    <Company>WLSoftware</Company>
+    <Product>WLProject</Product>
+    <Description>.NET Core 3.1 Client to access Facebook Graph API</Description>
+    <Copyright>WLSoftware</Copyright>
+    <PackageTags>facebook, facebook sdk, graph api</PackageTags>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.1" />
+    <PackageReference Include="System.Text.Json" Version="4.7.0" />
+  </ItemGroup>
+
+</Project>

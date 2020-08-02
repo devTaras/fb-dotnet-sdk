@@ -1,0 +1,22 @@
+trigger:
+- develop
+- master
+
+stages:
+
+- stage: Prerelease
+  displayName: Prerelease
+  condition: or(eq(variables['Build.SourceBranch'], 'refs/heads/develop'), and(not(startsWith(variables['Build.SourceBranch'], 'refs/heads/releases/')), eq(variables['Build.Reason'], 'Manual')))
+  jobs:
+  - template: templates/pack.yml
+    parameters:
+      configuration: 'Debug'
+      versionSuffix: '--version-suffix ci-$(Build.BuildNumber)'
+
+- stage: Release
+  displayName: Release
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
+  jobs:
+  - template: templates/pack.yml
+    parameters:
+      configuration: 'Release'
