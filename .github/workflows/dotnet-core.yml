@@ -26,4 +26,4 @@ jobs:
     - name: Create the package
       run: dotnet pack --configuration Release
     - name: Publish the package to NuGet
-      run: dotnet nuget push GraphApi.Facebook.Client/bin/Release/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_API_KEY }}
+      run: dotnet nuget push GraphApi.Facebook/bin/Release/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_API_KEY }}
