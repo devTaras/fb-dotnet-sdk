@@ -1,6 +1,7 @@
 {
   "Facebook": {
     "AppId": "168859494420616",
-    "Secret": "36fe14d2c7a4e22f3e9ad9d436883518"
+    "Secret": "36fe14d2c7a4e22f3e9ad9d436883518",
+    "TestUserId": "101298791447225"
   }
 }
