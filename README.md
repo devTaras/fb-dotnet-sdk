@@ -7,6 +7,8 @@ Target: _.NET Standard 2.0_
 
 Integration tests target: _.NET Core 3.1_
 
+## Where is package? 
+[GraphApi.Facebook.Client](https://www.nuget.org/packages/GraphApi.Facebook.Client/) - only prerelease version available
 
 ## How to start using the library?
 You need to add Facebook section to your JSON configuration file with your ClientId and ClientSecret:
