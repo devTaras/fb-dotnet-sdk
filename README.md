@@ -16,8 +16,9 @@ You need to add Facebook section to your JSON configuration file with your Clien
 ```json
 {
   "Facebook": {
-    "AppId": "100011113333444",
-    "Secret": "12ab23bc34bee22f3e9ad9d431234567"
+    "AppId": "168859494420616",
+    "Secret": "36fe14d2c7a4e22f3e9ad9d436883518",
+    "TestUserId": "101298791447225"
   }
 }
 ```
